@@ -1,6 +1,6 @@
 app-id: io.github.alsofelix.crabdrop
 runtime: org.gnome.Platform
-runtime-version: '49'
+runtime-version: "49"
 sdk: org.gnome.Sdk
 command: crabdrop
 sdk-extensions:
@@ -21,8 +21,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/alsofelix/crabdrop.git
-        tag: v0.1.3
-        commit: 648b5abb761a176b3478c88c8a95c98ff7ad3ff5
+        tag: v0.1.4
+        commit: fbb4ad5ad392974e7479d18815e64b0099db6d21
       - cargo-sources.json
       - node-sources.json
     build-options:
@@ -30,7 +30,7 @@ modules:
         CARGO_HOME: /run/build/crabdrop/cargo
         XDG_CACHE_HOME: /run/build/crabdrop/flatpak-node/cache
         npm_config_cache: /run/build/crabdrop/flatpak-node/npm-cache
-        npm_config_offline: 'true'
+        npm_config_offline: "true"
     build-commands:
       - npm ci --offline --legacy-peer-deps
       - cargo --offline fetch --manifest-path src-tauri/Cargo.toml
@@ -38,5 +38,6 @@ modules:
       - install -Dm755 src-tauri/target/release/crabdrop /app/bin/crabdrop
       - install -Dm644 packaging/io.github.alsofelix.crabdrop.metainfo.xml /app/share/metainfo/io.github.alsofelix.crabdrop.metainfo.xml
       - install -Dm644 packaging/io.github.alsofelix.crabdrop.desktop /app/share/applications/io.github.alsofelix.crabdrop.desktop
-      - install -Dm644 src-tauri/icons/128x128.png /app/share/icons/hicolor/128x128/apps/io.github.alsofelix.crabdrop.png
       - install -Dm644 src-tauri/icons/32x32.png /app/share/icons/hicolor/32x32/apps/io.github.alsofelix.crabdrop.png
+      - install -Dm644 src-tauri/icons/64x64.png /app/share/icons/hicolor/64x64/apps/io.github.alsofelix.crabdrop.png
+      - install -Dm644 src-tauri/icons/128x128.png /app/share/icons/hicolor/128x128/apps/io.github.alsofelix.crabdrop.png
