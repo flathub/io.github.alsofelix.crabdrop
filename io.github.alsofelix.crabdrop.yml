@@ -13,6 +13,7 @@ finish-args:
   - --socket=wayland
   - --device=dri
   - --filesystem=xdg-download
+  - --talk-name=org.freedesktop.secrets
 build-options:
   append-path: /usr/lib/sdk/node20/bin:/usr/lib/sdk/rust-stable/bin
 modules:
@@ -21,8 +22,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/alsofelix/crabdrop.git
-        tag: v0.1.4
-        commit: fbb4ad5ad392974e7479d18815e64b0099db6d21
+        tag: v0.1.6
+        commit: 9637cd0435c5f6eff47877d46a8fcb20adc42e43
       - cargo-sources.json
       - node-sources.json
     build-options:
