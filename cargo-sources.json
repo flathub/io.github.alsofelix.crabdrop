@@ -6125,6 +6125,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/toml/toml-1.0.1+spec-1.1.0.crate",
+        "sha256": "bbe30f93627849fa362d4a602212d41bb237dc2bd0f8ba0b2ce785012e124220",
+        "dest": "cargo/vendor/toml-1.0.1+spec-1.1.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"bbe30f93627849fa362d4a602212d41bb237dc2bd0f8ba0b2ce785012e124220\", \"files\": {}}",
+        "dest": "cargo/vendor/toml-1.0.1+spec-1.1.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/toml_datetime/toml_datetime-0.6.3.crate",
         "sha256": "7cda73e2f1397b1262d6dfdcef8aafae14d1de7748d66822d3bfeeb6d03e5e4b",
         "dest": "cargo/vendor/toml_datetime-0.6.3"
@@ -6146,6 +6159,19 @@
         "type": "inline",
         "contents": "{\"package\": \"92e1cfed4a3038bc5a127e35a2d360f145e1f4b971b551a2ba5fd7aedf7e1347\", \"files\": {}}",
         "dest": "cargo/vendor/toml_datetime-0.7.5+spec-1.1.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/toml_datetime/toml_datetime-1.0.0+spec-1.1.0.crate",
+        "sha256": "32c2555c699578a4f59f0cc68e5116c8d7cabbd45e1409b989d4be085b53f13e",
+        "dest": "cargo/vendor/toml_datetime-1.0.0+spec-1.1.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"32c2555c699578a4f59f0cc68e5116c8d7cabbd45e1409b989d4be085b53f13e\", \"files\": {}}",
+        "dest": "cargo/vendor/toml_datetime-1.0.0+spec-1.1.0",
         "dest-filename": ".cargo-checksum.json"
     },
     {
