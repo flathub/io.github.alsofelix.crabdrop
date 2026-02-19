@@ -22,8 +22,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/alsofelix/crabdrop.git
-        tag: v0.3.4
-        commit: 0bc9b8ad51677a90d73361ac2c41723b8a88408c
+        tag: v0.3.5
+        commit: 3393f3322bd43e6a582646c241179acfd4ed33bb
       - cargo-sources.json
       - node-sources.json
     build-options:
